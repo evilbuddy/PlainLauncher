@@ -83,10 +83,6 @@ int main()
 	for (size_t i = 0; i < app.size() - 1; i++)
 		path = path + app[i] + "\\";
 
-	print(("drive : " + app[0]).c_str());
-	print(("path : " + path).c_str());
-	print(("launch : " + launch).c_str());
-
 	system((app[0] + " & cd \"" + path + "\" & " + launch.c_str()).c_str());
 
 	return 0;
