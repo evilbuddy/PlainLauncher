@@ -1,0 +1,30 @@
+﻿<Window x:Class="PlainLauncher.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlainLauncher"
+        xmlns:ui="http://schemas.modernwpf.com/2019"
+        mc:Ignorable="d"
+        ui:WindowHelper.UseModernWindowStyle="True"
+        Title="Settings" Height="249" Width="800" ResizeMode="NoResize">
+    <Grid Margin="10,10,10,10">
+        <TextBox Name="app" VerticalAlignment="Top" Margin="0,0,42,0"/>
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,5,0"
+                Click="app_browse" Height="32" Width="32">...</Button>
+
+        <Label Height="22" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+            Margin="0,37,0,0">%F will be replaced by the file path.</Label>
+        <Label Height="22" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+               Margin="0,59,0,0">If %F is not present, the file path will be at the end</Label>
+
+        <TextBox Name="argument" VerticalAlignment="Top" Margin="0,91,0,0"/>
+
+        <TextBox Name="files" VerticalAlignment="Top" Margin="0,128,42,0"/>
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,128,5,0"
+                Click="files_browse" Height="32" Width="32">...</Button>
+
+        <Button VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0,165,5,0"
+                Click="Save" Height="32">Save</Button>
+    </Grid>
+</Window>

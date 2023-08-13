@@ -1,7 +1,7 @@
-# Builds
-Build/
+# Build stuff
+bin/
+obj/
 
 # VS stuff
 .vs/
-*.vcxproj.user
-*.sln # the solution is not needed. The project is enough :P
+*user
