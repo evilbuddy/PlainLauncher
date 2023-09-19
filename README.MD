@@ -8,6 +8,7 @@ I made it to launch GZDoom with WADs.
 I don't know. If you don't need it, then don't use it.
 
 ## How to use
+- First, you need to download and install .NET 5.0 SDK or .NET 5.0 Desktop Runtime
 - Open `PlainLauncher.exe`
 - Click the `Settings` button at the bottom
 - Enter your settings
